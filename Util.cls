@@ -4,9 +4,7 @@ global  class Util{
 
     public static List<StudentWave__c> studentWavesforPearson = new List<StudentWave__c>();
 
-    public static void assignRecordOwner(List<sObject> sobjectList){
-        assignRecordOwner(sobjectList, Label.ProgramServicesManager);
-    }
+   
 
     public static void assignRecordOwner(sObject sObj){
         assignRecordOwner(new List<sObject>{sObj}, Label.ProgramServicesManager);
